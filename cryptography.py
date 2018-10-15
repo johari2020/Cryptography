@@ -16,10 +16,16 @@ l=[]
 m = " " 
 while m!= "q": 
     m = input("Enter e to encrypt, d to decrypt, or q to quit: ")
-    for i in m: 
-        n = associations.find(i)
+    for j in m:
+        n = associations.find(j)
         l.append(n)
-        i+=1
-        print([l])
+    print(l)
+    '''
+        for i in n: 
+            r = associations[index]    
+        
+            i+=1
+        print([l]
+    '''
     if m == "q":
-        print("Goodbye!") 
+        print("Goodbye!")
