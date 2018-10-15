@@ -13,6 +13,7 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 
 l=[]
 ll = []
+h=0
 e = " " 
 while e!= "q": 
     e = input("Enter e to encrypt, d to decrypt, or q to quit: ")
@@ -23,11 +24,11 @@ while e!= "q":
         for y in k:
             kk= associations.find(y)
             ll.append(kk)
-            
         l.append(n)
     for f in ll:
-        o = [x+f for x in l]
+        o = [x+ll[h] for x in l]
         print(o)
+        h+=1
     
     
     '''
