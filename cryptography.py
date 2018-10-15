@@ -12,14 +12,21 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 
 l=[]
-
-m = " " 
-while m!= "q": 
-    m = input("Enter e to encrypt, d to decrypt, or q to quit: ")
+ll = []
+e = " " 
+while e!= "q": 
+    e = input("Enter e to encrypt, d to decrypt, or q to quit: ")
+    m = input("Message: ")
+    k = input("Key: ") 
     for j in m:
         n = associations.find(j)
+        for y in k:
+            kk= associations.find(y)
+            ll.append(kk)
+            
         l.append(n)
-    print(l)
+    print(l+ll)
+    
     '''
         for i in n: 
             r = associations[index]    
