@@ -25,7 +25,10 @@ while e!= "q":
             ll.append(kk)
             
         l.append(n)
-    print(l+ll)
+    for f in ll:
+        o = [x+f for x in l]
+        print(o)
+    
     
     '''
         for i in n: 
