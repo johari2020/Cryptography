@@ -35,9 +35,9 @@ while e!= "q":
         if len(kkk)<len(m):
             d = len(m)-len(kkk)
             for g in ll:
-                gg = ll.append(g)
+                ll.append(ll[g])
                 g+=1
-            print(gg)
+            print(ll)
         
         
     print(ll)
