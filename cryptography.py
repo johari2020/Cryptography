@@ -13,6 +13,8 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 
 l=[]
 ll = []
+lll=[]
+k=()
 h=0
 e = " " 
 while e!= "q": 
@@ -21,19 +23,29 @@ while e!= "q":
         print("Goodbye!")
     else:
         m = input("Message: ")
-        k = input("Key: ") 
+        kkk = input("Key: ") 
+        if len(kkk)<len(m):
+            d = len(m)-len(kkk)
+            while d<len(m):
+                for y in kkk:
+                    kk= (associations.find(y)+1)
+                    ll.append(kk)
+            d-=1
+                    
         for j in m:
             n = (associations.find(j)+1)
             l.append(n)
-        for y in k:
-            kk= (associations.find(y)+1)
-            ll.append(kk)
+        
+        
     print(ll)
     print(l)
-    for f in ll:
-        o = [x+f for x in l]
-        print(o)
-    
+    for f in l:
+        for w in ll:
+            o = w+f
+            lll.append(o)
+            w+=1
+        f+=1
+    print(lll)
     
     '''
         for i in n: 
