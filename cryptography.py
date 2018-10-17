@@ -24,17 +24,20 @@ while e!= "q":
     else:
         m = input("Message: ")
         kkk = input("Key: ") 
-        if len(kkk)<len(m):
-            d = len(m)-len(kkk)
-            while d<len(m):
-                for y in kkk:
-                    kk= (associations.find(y)+1)
-                    ll.append(kk)
-            d-=1
+        
                     
         for j in m:
             n = (associations.find(j)+1)
             l.append(n)
+        for y in kkk:
+                    kk= (associations.find(y)+1)
+                    ll.append(kk)
+        if len(kkk)<len(m):
+            d = len(m)-len(kkk)
+            for g in range(0,len(ll)):
+                gg = ll.append(g)
+                g+=1
+            print(gg)
         
         
     print(ll)
