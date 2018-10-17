@@ -16,6 +16,7 @@ ll = []
 lll=[]
 k=()
 h=0
+g=0 
 e = " " 
 while e!= "q": 
     e = input("Enter e to encrypt, d to decrypt, or q to quit: ")
@@ -34,7 +35,8 @@ while e!= "q":
                     ll.append(kk)
         if len(kkk)<len(m):
             d = len(m)-len(kkk)
-            for g in ll:
+           
+            for g in range(0,d):
                 ll.append(ll[g])
                 g+=1
             print(ll)
