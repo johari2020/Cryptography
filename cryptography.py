@@ -17,21 +17,22 @@ h=0
 e = " " 
 while e!= "q": 
     e = input("Enter e to encrypt, d to decrypt, or q to quit: ")
-    m = input("Message: ")
-    k = input("Key: ") 
-    for j in m:
-        n = associations.find(j)
-        print(n)
+    if e == "q":
+        print("Goodbye!")
+    else:
+        m = input("Message: ")
+        k = input("Key: ") 
+        for j in m:
+            n = (associations.find(j)+1)
+            l.append(n)
         for y in k:
-            kk= associations.find(y)
+            kk= (associations.find(y)+1)
             ll.append(kk)
-            print(kk)
-        l.append(n)
+    print(ll)
+    print(l)
     for f in ll:
-        print 
-        o = [x+ll[h] for x in l]
-        
-        h+=1
+        o = [x+f for x in l]
+        print(o)
     
     
     '''
