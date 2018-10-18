@@ -44,10 +44,11 @@ while e!= "q":
         
     print(ll)
     print(l)
-    for f in l:
-        o = (ll[0:len(ll):1]+l[0:len(l):1])
+    f=len(l)
+    while f>0:
+        o = (ll[f]+l[f])
         lll.append(o)
-        f+=1
+        f-=1
     print(lll)
     
     if m == "q":
