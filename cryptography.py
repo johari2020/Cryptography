@@ -36,7 +36,7 @@ while e!= "q":
         if len(kkk)<len(m):
             d = len(m)-len(kkk)
            
-            for g in range(0,d):
+            for g in range(0,d): 
                 ll.append(ll[g])
                 g+=1
             print(ll)
@@ -45,20 +45,11 @@ while e!= "q":
     print(ll)
     print(l)
     for f in l:
-        for w in ll:
-            o = w+f
-            lll.append(o)
-            w+=1
+        o = (ll[1:len(ll):1]+f)
+        lll.append(o)
         f+=1
     print(lll)
     
-    '''
-        for i in n: 
-            r = associations[index]    
-        
-            i+=1
-        print([l]
-    '''
     if m == "q":
         print("Goodbye!")
 
