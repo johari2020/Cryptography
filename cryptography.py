@@ -45,7 +45,7 @@ while e!= "q":
     print(ll)
     print(l)
     for f in l:
-        o = (ll[1:len(ll):1]+f)
+        o = (ll[0:len(ll):1]+l[0:len(l):1])
         lll.append(o)
         f+=1
     print(lll)
