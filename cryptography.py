@@ -46,10 +46,11 @@ while e!= "q":
     print(l)
     f=len(l)
     while f>0:
-        o = (ll[f]+l[f])
-        lll.append(o)
+        o = ll[f]
+        print(o)
+        'lll.append(o)'
         f-=1
-    print(lll)
+    'print(lll)'
     
     if m == "q":
         print("Goodbye!")
