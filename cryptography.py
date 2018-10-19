@@ -45,12 +45,13 @@ while e!= "q":
     print(ll)
     print(l)
     f=len(l)
-    while f>0:
-        o = ll[f]
-        print(o)
-        'lll.append(o)'
-        f-=1
-    'print(lll)'
+    x=0
+    while x < len(ll):
+        o = ll[x] + l[x]
+        lll.append(associations[o])
+        x+=1
+    print(lll)
+    
     
     if m == "q":
         print("Goodbye!")
