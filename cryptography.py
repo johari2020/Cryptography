@@ -41,8 +41,6 @@ while e!= "q":
                 g+=1
             print(ll)
         
-        
-    print(ll)
     print(l)
     f=len(l)
     x=0
