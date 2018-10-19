@@ -46,7 +46,11 @@ while e!= "q":
     x=0
     while x < len(ll):
         o = ll[x] + l[x]
-        lll.append(associations[o])
+        if o > len(associations):
+            p = o - len(associations) 
+        else: 
+            p=o
+        lll.append(associations[p])
         x+=1
     print(lll)
     
