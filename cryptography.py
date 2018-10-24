@@ -9,6 +9,7 @@ Write and submit a program that encrypts and decrypts user data.
 
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
+
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 
 l=[]
@@ -44,16 +45,20 @@ while e!= "q":
     print(l)
     f=len(l)
     x=0
-    while x < len(ll):
-        o = ll[x] + l[x]
-        if o > len(associations):
-            p = o - len(associations) 
-        else: 
+    if len(m)>len(kkk) or len(m)==len(kkk): 
+        while x < len(ll):
+            o = ll[x] + l[x]
             p=o
-        lll.append(associations[p])
-        x+=1
-    print(lll)
-    
+            lll.append(associations[p])
+            x+=1
+        print(lll)
+    elif: 
+        while x < len(l):
+            o = ll[x] + l[x]
+            p=o
+            lll.append(associations[p])
+            x+=1
+        print(lll)
     
     if m == "q":
         print("Goodbye!")
