@@ -46,7 +46,7 @@ while e!= "q":
     x=0
     if len(m) > len(t): 
         while x < len(ll):
-            o = ll[x] + l[x]
+            o = ll[x] + l[x] - 2
             if o > len(associations):
                 p = o - len(associations) 
             else: 
@@ -56,7 +56,7 @@ while e!= "q":
         print(lll)
     if len(m) < len(t): 
         while x < len(l):
-            o = ll[x] + l[x]
+            o = ll[x] + l[x] - 2
             if o > len(associations):
                 p = o - len(associations) 
             else: 
