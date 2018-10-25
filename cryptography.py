@@ -44,16 +44,26 @@ while e!= "q":
     print(l)
     f=len(l)
     x=0
-    if len(m) > len(
-    while x < len(ll):
-        o = ll[x] + l[x]
-        if o > len(associations):
-            p = o - len(associations) 
-        else: 
-            p=o
-        lll.append(associations[p])
-        x+=1
-    print(lll)
+    if len(m) > len(t): 
+        while x < len(ll):
+            o = ll[x] + l[x]
+            if o > len(associations):
+                p = o - len(associations) 
+            else: 
+                p=o
+            lll.append(associations[p])
+            x+=1
+        print(lll)
+    if len(m) < len(t): 
+        while x < len(l):
+            o = ll[x] + l[x]
+            if o > len(associations):
+                p = o - len(associations) 
+            else: 
+                p=o
+            lll.append(associations[p])
+            x+=1
+        print(lll)
     
     
     if m == "q":
