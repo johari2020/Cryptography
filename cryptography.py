@@ -22,7 +22,9 @@ while e!= "q":
     e = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     if e == "q":
         print("Goodbye!")
-    else:
+    elif e == "d": 
+        print(3)
+    elif e == "e":
         m = input("Message: ")
         t = input("Key: ") 
         
@@ -41,33 +43,31 @@ while e!= "q":
                 g+=1
             print(ll)
 
-    print(l)
-    f=len(l)
-    x=0
-    if len(m) > len(t): 
-        while x < len(ll):
-            o = ll[x] + l[x] - 2
-            if o > len(associations):
-                p = o - len(associations) 
-            else: 
-                p=o
-            lll.append(associations[p])
-            x+=1
-        print(lll)
-    if len(m) < len(t): 
-        while x < len(l):
-            o = ll[x] + l[x] - 2
-            if o > len(associations):
-                p = o - len(associations) 
-            else: 
-                p=o
-            lll.append(associations[p])
-            x+=1
-        print(lll)
-    
-    
-    if m == "q":
-        print("Goodbye!")
+        print(l)
+        f=len(l)
+        x=0
+        if len(m) > len(t): 
+            while x < len(ll):
+                o = ll[x] + l[x] - 2
+                if o > len(associations):
+                    p = o - len(associations) 
+                else: 
+                    p=o
+                lll.append(associations[p])
+                x+=1
+            print(lll)
+        if len(m) < len(t): 
+            while x < len(l):
+                o = ll[x] + l[x] - 2
+                if o > len(associations):
+                    p = o - len(associations) 
+                else: 
+                    p=o
+                lll.append(associations[p])
+                x+=1
+            print(lll)
+    else: 
+        print("try again") 
 
 """
 cryptography.py
