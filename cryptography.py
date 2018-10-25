@@ -23,7 +23,45 @@ while e!= "q":
     if e == "q":
         print("Goodbye!")
     elif e == "d": 
-        print(3)
+        m = input("Message: ")
+        t = input("Key: ")
+        for j in m:
+            n = (associations.find(j))
+            l.append(n)
+        for y in t:
+                    kk= (associations.find(y))
+                    ll.append(kk)
+        if len(t)<len(m):
+            d = len(m)-len(t)
+           
+            for g in range(0,d): 
+                ll.append(ll[g])
+                g+=1
+            print(ll)
+            print(l)
+        f=len(l)
+        x=0
+        if len(m) > len(t): 
+            while x < len(ll):
+                o = ll[x] - l[x]
+                if o > len(associations):
+                    p = o - len(associations) 
+                else: 
+                    p=o
+                lll.append(associations[p])
+                x+=1
+            print(lll)
+        if len(m) < len(t): 
+            while x < len(l):
+                o = ll[x] - l[x] 
+                if o > len(associations):
+                    p = o - len(associations) 
+                else: 
+                    p=o
+                lll.append(associations[p])
+                x+=1
+            print(lll)
+        
     elif e == "e":
         m = input("Message: ")
         t = input("Key: ") 
