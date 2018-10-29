@@ -6,7 +6,7 @@ Credit:megsnyder, Noah
  Write and submit a program that encrypts and decrypts user data.
  See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
-associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
+associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 l=[]
 ll = []
 lll=[]
@@ -40,10 +40,7 @@ while e!= "q":
         if len(m) > len(t): 
             while x < len(ll):
                 o = l[x] - ll[x]
-                if o > len(associations):
-                    p = o - len(associations) 
-                else: 
-                    p=o
+                
                 lll.append(associations[p])
                 x+=1
             u=''.join(lll)
@@ -51,10 +48,7 @@ while e!= "q":
         if len(m) < len(t): 
             while x < len(l):
                 o = l[x] - ll[x] 
-                if o > len(associations):
-                    p = o - len(associations) 
-                else: 
-                    p=o
+                
                 lll.append(associations[p])
                 x+=1
             u=''.join(lll)
@@ -83,10 +77,7 @@ while e!= "q":
         if len(m) > len(t): 
             while x < len(ll):
                 o = ll[x] + l[x] - 2
-                if o > len(associations):
-                    p = o - len(associations) 
-                else: 
-                    p=o
+                
                 lll.append(associations[p])
                 x+=1
             uu = ' '.join(lll)
@@ -94,10 +85,7 @@ while e!= "q":
         if len(m) < len(t): 
             while x < len(l):
                 o = ll[x] + l[x] - 2
-                if o > len(associations):
-                    p = o - len(associations) 
-                else: 
-                    p=o
+                
                 lll.append(associations[p])
                 uu= rr.join(lll[x])
                 x+=1
