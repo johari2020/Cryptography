@@ -91,4 +91,4 @@ while e!= "q":
                 x+=1
             print(uu)
     else: 
-        print("try again") 
+        print("Goodbye!") 
