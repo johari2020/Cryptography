@@ -7,7 +7,7 @@ Credit:megsnyder, Noah
  See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
- l=[]
+l=[]
 ll = []
 lll=[]
 k=()
@@ -39,7 +39,7 @@ while e!= "q":
         x=0
         if len(m) > len(t): 
             while x < len(ll):
-                o = ll[x] - l[x]
+                o = l[x] - ll[x]
                 if o > len(associations):
                     p = o - len(associations) 
                 else: 
@@ -49,7 +49,7 @@ while e!= "q":
             print(lll)
         if len(m) < len(t): 
             while x < len(l):
-                o = ll[x] - l[x] 
+                o = l[x] - ll[x] 
                 if o > len(associations):
                     p = o - len(associations) 
                 else: 
@@ -76,7 +76,7 @@ while e!= "q":
                 ll.append(ll[g])
                 g+=1
             print(ll)
-         print(l)
+        print(l)
         f=len(l)
         x=0
         if len(m) > len(t): 
@@ -101,4 +101,3 @@ while e!= "q":
             print(lll)
     else: 
         print("try again") 
- print("Hello, world.")
