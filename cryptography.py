@@ -2,13 +2,12 @@
 cryptography.py
 Author: Johari
 Credit:megsnyder, Noah
-Assignment:
-Write and submit a program that encrypts and decrypts user data.
-See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
+ Assignment:
+ Write and submit a program that encrypts and decrypts user data.
+ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
-
-l=[]
+ l=[]
 ll = []
 lll=[]
 k=()
@@ -77,8 +76,7 @@ while e!= "q":
                 ll.append(ll[g])
                 g+=1
             print(ll)
-
-        print(l)
+         print(l)
         f=len(l)
         x=0
         if len(m) > len(t): 
@@ -102,4 +100,5 @@ while e!= "q":
                 x+=1
             print(lll)
     else: 
-        print("try again")
+        print("try again") 
+ print("Hello, world.")
