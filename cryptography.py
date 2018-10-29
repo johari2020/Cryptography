@@ -41,7 +41,7 @@ while e!= "q":
             while x < len(ll):
                 o = l[x] - ll[x]
                 
-                lll.append(associations[p])
+                lll.append(associations[o])
                 x+=1
             u=''.join(lll)
             print(u)
@@ -49,7 +49,7 @@ while e!= "q":
             while x < len(l):
                 o = l[x] - ll[x] 
                 
-                lll.append(associations[p])
+                lll.append(associations[o])
                 x+=1
             u=''.join(lll)
             print(u)
@@ -78,7 +78,7 @@ while e!= "q":
             while x < len(ll):
                 o = ll[x] + l[x] - 2
                 
-                lll.append(associations[p])
+                lll.append(associations[o])
                 x+=1
             uu = ' '.join(lll)
             print(uu)
@@ -86,7 +86,7 @@ while e!= "q":
             while x < len(l):
                 o = ll[x] + l[x] - 2
                 
-                lll.append(associations[p])
+                lll.append(associations[o])
                 uu= rr.join(lll[x])
                 x+=1
             print(uu)
