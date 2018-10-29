@@ -13,6 +13,7 @@ lll=[]
 k=()
 h=0
 g=0 
+rr = (" ")
 e = " " 
 while e!= "q": 
     e = input("Enter e to encrypt, d to decrypt, or q to quit: ")
@@ -33,8 +34,7 @@ while e!= "q":
             for g in range(0,d): 
                 ll.append(ll[g])
                 g+=1
-            print(ll)
-            print(l)
+            
         f=len(l)
         x=0
         if len(m) > len(t): 
@@ -46,7 +46,8 @@ while e!= "q":
                     p=o
                 lll.append(associations[p])
                 x+=1
-            print(lll)
+            u=''.join(lll)
+            print(u)
         if len(m) < len(t): 
             while x < len(l):
                 o = l[x] - ll[x] 
@@ -76,8 +77,7 @@ while e!= "q":
             for g in range(0,d): 
                 ll.append(ll[g])
                 g+=1
-            print(ll)
-        print(l)
+            
         f=len(l)
         x=0
         if len(m) > len(t): 
@@ -89,7 +89,8 @@ while e!= "q":
                     p=o
                 lll.append(associations[p])
                 x+=1
-            print(lll)
+            uu = ' '.join(lll)
+            print(uu)
         if len(m) < len(t): 
             while x < len(l):
                 o = ll[x] + l[x] - 2
@@ -98,8 +99,8 @@ while e!= "q":
                 else: 
                     p=o
                 lll.append(associations[p])
+                uu= rr.join(lll[x])
                 x+=1
-            u=''.join(lll)
-            print(u)
+            print(uu)
     else: 
         print("try again") 
