@@ -56,7 +56,8 @@ while e!= "q":
                     p=o
                 lll.append(associations[p])
                 x+=1
-            print(lll)
+            u=''.join(lll)
+            print(u)
         
     elif e == "e":
         m = input("Message: ")
@@ -98,6 +99,7 @@ while e!= "q":
                     p=o
                 lll.append(associations[p])
                 x+=1
-            print(lll)
+            u=''.join(lll)
+            print(u)
     else: 
         print("try again") 
