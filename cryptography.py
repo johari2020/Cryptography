@@ -2,9 +2,9 @@
 cryptography.py
 Author: Johari
 Credit:megsnyder, Noah
- Assignment:
- Write and submit a program that encrypts and decrypts user data.
- See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
+Assignment:
+Write and submit a program that encrypts and decrypts user data.
+See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 l=[]
@@ -13,7 +13,7 @@ lll=[]
 k=()
 h=0
 g=0 
-rr = (" ")
+rr = ("")
 e = " " 
 while e!= "q": 
     e = input("Enter e to encrypt, d to decrypt, or q to quit: ")
@@ -26,7 +26,7 @@ while e!= "q":
         k=()
         h=0
         g=0 
-        rr = (" ")
+        rr = ("")
         m = input("Message: ")
         t = input("Key: ")
         for j in m:
@@ -68,7 +68,7 @@ while e!= "q":
         k=()
         h=0
         g=0 
-        rr = (" ")
+        rr = ("")
         m = input("Message: ")
         t = input("Key: ") 
         
