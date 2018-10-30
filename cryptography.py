@@ -21,12 +21,12 @@ while e!= "q":
         print("Goodbye!")
     elif e == "d": 
         l=[]
-    ll = []
-    lll=[]
-    k=()
-    h=0
-    g=0 
-    rr = (" ")
+        ll = []
+        lll=[]
+        k=()
+        h=0
+        g=0 
+        rr = (" ")
         m = input("Message: ")
         t = input("Key: ")
         for j in m:
@@ -63,12 +63,12 @@ while e!= "q":
         
     elif e == "e":
         l=[]
-    ll = []
-    lll=[]
-    k=()
-    h=0
-    g=0 
-    rr = (" ")
+        ll = []
+        lll=[]
+        k=()
+        h=0
+        g=0 
+        rr = (" ")
         m = input("Message: ")
         t = input("Key: ") 
         
