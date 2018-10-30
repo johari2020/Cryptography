@@ -105,4 +105,4 @@ while e!= "q":
                 x+=1
             print(uu)
     else: 
-        print("Goodbye!") 
+        print("Did not understand command, try again.") 
