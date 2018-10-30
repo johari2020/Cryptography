@@ -94,7 +94,7 @@ while e!= "q":
                 
                 lll.append(associations[o])
                 x+=1
-            uu = ' '.join(lll)
+            uu = ''.join(lll)
             print(uu)
         if len(m) < len(t): 
             while x < len(l):
